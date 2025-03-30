@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/inter/Inter-VariableFont.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* Example Usage */
+h1 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+}
