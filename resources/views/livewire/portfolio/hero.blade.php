@@ -1,6 +1,6 @@
-<div class="relative w-full min-h-screen bg-[var(--color-bg)] overflow-hidden">
+<div class="relative w-full min-h-screen mt-[-15px] bg-[var(--color-bg)] overflow-hidden">
     <!-- Blurry Sun SVG (Top Left) -->
-    <div class="absolute top-[-150px] left-[-150px] w-[400px] h-[400px] opacity-40 blur-3xl">
+    <div class="absolute top-[-150px] left-[-150px] w-[400px] h-[400px] opacity-40 blur-3xl z-10">
         <img src="/images/red-circle-svgrepo-com.svg" alt="Decorative SVG" class="w-full h-full object-cover">
     </div>
 
@@ -138,7 +138,7 @@
     </section>
 
     <!-- Blurry Sun SVG (Bottom Right) -->
-    <div class="absolute bottom-[-150px] right-[-150px] w-[400px] h-[400px] opacity-40 blur-3xl">
+    <div class="absolute bottom-[-150px] right-[-150px] w-[400px] h-[400px] opacity-40 blur-3xl z-10">
         <img src="/images/red-circle-svgrepo-com.svg" alt="Decorative SVG" class="w-full h-full object-cover">
     </div>
 </div>
