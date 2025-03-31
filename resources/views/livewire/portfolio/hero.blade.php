@@ -14,7 +14,7 @@
             <p class="text-[var(--color-text)] mt-4 text-lg max-w-2xl mx-auto opacity-90">
                 A <strong>Full-Stack Developer & DevOps Engineer</strong> passionate about <strong>automation, cloud
                     infrastructure,
-                    and high-performance web applications</strong>. 🚀
+                    and high-performance web applications</strong>.
             </p>
 
             <div class="mt-6 flex justify-center space-x-4">
@@ -55,7 +55,7 @@
                 <strong>precision and innovation</strong> to every project.
             </p>
             <p class="text-[var(--color-text)] mt-4 font-semibold">
-                Let’s collaborate and create something extraordinary! 🚀
+                Let’s collaborate and create something extraordinary!
             </p>
         </div>
     </section>

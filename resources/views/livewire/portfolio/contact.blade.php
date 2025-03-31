@@ -27,7 +27,7 @@
         <input type="email" wire:model="email" placeholder="Your Email" required
             class="w-full p-4 rounded-lg bg-[var(--color-bg-light)] dark:bg-[var(--color-bg-dark)] text-[var(--color-text)] focus:outline-none border-[1px] border-[var(--color-accent-light)] hover:border-[var(--color-accent)] focus:border-[var(--color-accent)]">
 
-        <textarea wire:model="message" placeholder="Your Message" rows="6" required
+        <textarea wire:model="userMessage" placeholder="Your Message" rows="6" required
             class="w-full p-4 rounded-lg bg-[var(--color-bg-light)] dark:bg-[var(--color-bg-dark)] text-[var(--color-text)] focus:outline-none border-[1px] border-[var(--color-accent-light)] hover:border-[var(--color-accent)] focus:border-[var(--color-accent)]"></textarea>
 
         <button type="submit" wire:loading.attr="disabled"
@@ -38,6 +38,10 @@
 
     <!-- Social Links -->
     <div class="mt-8 flex justify-center gap-6 flex-wrap">
+        <a href="https://github.com/ansuman-satapathy" target="_blank"
+            class="social-icon w-12 h-12 flex items-center justify-center bg-[var(--color-bg-light)] dark:bg-[var(--color-bg-dark)] rounded-full shadow-md transition-transform hover:scale-105 border-[1px] border-[var(--color-accent-light)] hover:border-[var(--color-accent)]">
+            <i class="fab fa-github text-[var(--color-accent)] text-2xl"></i>
+        </a>
         <a href="https://x.com/ansumantwts" target="_blank"
             class="social-icon w-12 h-12 flex items-center justify-center bg-[var(--color-bg-light)] dark:bg-[var(--color-bg-dark)] rounded-full shadow-md transition-transform hover:scale-105 border-[1px] border-[var(--color-accent-light)] hover:border-[var(--color-accent)]">
             <i class="fab fa-twitter text-[var(--color-accent)] text-2xl"></i>

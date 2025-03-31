@@ -13,16 +13,16 @@ class ContactFormMail extends Mailable
 
     public $name;
     public $email;
-    public $message;
+    public $userMessage;
 
     /**
      * Create a new message instance.
      */
-    public function __construct($name, $email, $message)
+    public function __construct($name, $email, $userMessage)
     {
         $this->name = $name;
         $this->email = $email;
-        $this->message = $message;
+        $this->userMessage = $userMessage;
     }
 
     /**
@@ -31,11 +31,11 @@ class ContactFormMail extends Mailable
     public function build()
     {
         return $this->subject('New Contact Form Submission')
-            ->view('emails.contact') // Specify the view
+            ->view('emails.contact')
             ->with([
-                'name' => $this->name,   // Pass data to the view
+                'name' => $this->name,
                 'email' => $this->email,
-                'message' => $this->message,
+                'userMessage' => $this->userMessage,
             ]);
     }
 }

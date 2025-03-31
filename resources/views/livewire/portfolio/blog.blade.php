@@ -9,7 +9,7 @@
 
 
     <h2 class="text-3xl font-bold text-[var(--color-accent)] text-center">Blogs</h2>
-    <p class="mt-2 text-center text-[var(--color-text)]">Read my latest thoughts on development and tech.</p>
+    <p class="mt-2 text-center text-[var(--color-text)]">Read my latest blogs on Hashnode!</p>
 
     <div class="mt-8">
         @forelse($posts as $post)

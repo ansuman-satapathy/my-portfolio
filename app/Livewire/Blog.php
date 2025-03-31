@@ -3,7 +3,6 @@
 namespace App\Livewire;
 
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Cache;
 use Livewire\Component;
 
 class Blog extends Component
@@ -12,8 +11,7 @@ class Blog extends Component
 
     public function mount()
     {
-        $this->posts = Cache::remember('hashnode_blogs', now()->addMinutes(30), function () {
-            $query = <<<GQL
+        $query = <<<GQL
         {
             user(username: "ansumannn") {
                 publications(first: 1) {
@@ -38,18 +36,16 @@ class Blog extends Component
         }
         GQL;
 
-            $response = Http::post('https://gql.hashnode.com/', ['query' => $query]);
+        $response = Http::post('https://gql.hashnode.com/', ['query' => $query]);
 
-            $data = $response->json();
+        $data = $response->json();
 
-            return isset($data['data']['user']['publications']['edges'][0]['node']['posts']['edges'])
-                ? collect($data['data']['user']['publications']['edges'][0]['node']['posts']['edges'])
-                    ->map(fn($post) => $post['node'])
-                    ->toArray()
-                : [];
-        });
+        $this->posts = isset($data['data']['user']['publications']['edges'][0]['node']['posts']['edges'])
+            ? collect($data['data']['user']['publications']['edges'][0]['node']['posts']['edges'])
+                ->map(fn($post) => $post['node'])
+                ->toArray()
+            : [];
     }
-
 
     public function render()
     {
