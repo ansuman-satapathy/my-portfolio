@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Livewire;
 
 use Livewire\Component;
@@ -29,7 +30,7 @@ class Project extends Component
                 'description' => 'Automating deployment with GitHub Actions for Laravel applications.',
                 'image' => '/images/cicd-bg.png',
                 'link' => 'https://github.com/ansuman-satapathy/laravel-cicd',
-                'tech' => ['GitHub Actions','CICD', 'Laravel', 'PHPStan', 'PEST'],
+                'tech' => ['GitHub Actions', 'CICD', 'Laravel', 'PHPStan', 'PEST'],
             ],
             [
                 'title' => 'My Portfolio - SPA with TALL Stack',
