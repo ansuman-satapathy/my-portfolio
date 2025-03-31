@@ -24,4 +24,4 @@ Route::get('/blogs', Main::class)->name('blog');
 Route::get('/certificates', Main::class)->name('certificate');
 Route::get('/contact', Main::class)->name('contact');
 
-require __DIR__ . '/auth.php';
+// require __DIR__ . '/auth.php';

@@ -97,3 +97,43 @@ select:focus[data-flux-control] {
 .rotate-180 {
     animation: rotateIcon 0.5s ease-out;
 }
+
+/* Swiper Arrows - Smaller & Themed */
+.swiper-button-prev,
+.swiper-button-next {
+    width: 35px;
+    height: 35px;
+    color: var(--color-accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+/* Hide Arrows on Mobile */
+@media (max-width: 1024px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+}
+
+/* Enable Grid Layout on Mobile */
+@media (max-width: 1024px) {
+    .swiper-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+    .swiper-wrapper {
+        display: contents;
+    }
+    .swiper-slide {
+        scroll-snap-align: start;
+    }
+}

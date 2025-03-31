@@ -7,6 +7,7 @@
     <title>{{ $title ?? 'Ansuman Satapathy' }}</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Load Custom Fonts -->
     <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
@@ -23,7 +24,8 @@
     </main>
 
     <x-layouts.frontend.footer />
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     @livewireScripts
 </body>
 

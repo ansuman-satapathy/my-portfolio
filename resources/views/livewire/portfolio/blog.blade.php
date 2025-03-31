@@ -64,4 +64,5 @@
             <p class="text-gray-500 text-center">No blogs found.</p>
         @endforelse
     </div>
+    
 </div>
