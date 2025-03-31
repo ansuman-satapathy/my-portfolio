@@ -16,7 +16,7 @@ class Project extends Component
                 'description' => 'A real-time self-hosted monitoring dashboard using Livewire & Flux UI.',
                 'image' => '/images/laramon-bg.png',
                 'link' => 'https://github.com/ansuman-satapathy/laramon',
-                'tech' => ['Laravel 11', 'Livewire 3', 'Alpine.js', 'Redis', 'Tailwind CSS', 'ApexCharts'],
+                'tech' => ['Laravel 11', 'Livewire', 'Alpine.js', 'Redis', 'Tailwind CSS', 'ApexCharts'],
             ],
             [
                 'title' => 'Multi-Stage Docker Deployment on AWS',
@@ -26,7 +26,7 @@ class Project extends Component
                 'tech' => ['Docker', 'AWS EC2', 'Spring Boot', 'Maven', 'NGINX'],
             ],
             [
-                'title' => 'Laravel CI/CD Pipeline with GitHub Actions',
+                'title' => 'CI/CD Pipeline with GitHub Actions',
                 'description' => 'Automating deployment with GitHub Actions for Laravel applications.',
                 'image' => '/images/cicd-bg.png',
                 'link' => 'https://github.com/ansuman-satapathy/laravel-cicd',
